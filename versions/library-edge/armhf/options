@@ -1,0 +1,3 @@
+export ARCH="armhf"
+export PULL_URL="http://dl-cdn.alpinelinux.org/alpine/edge/releases/armhf/alpine-minirootfs-3.6.0-armhf.tar.gz"
+export TAGS=(alpine:edge-armhf)

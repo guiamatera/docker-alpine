@@ -31,7 +31,9 @@ jobs:
           command: ./build $(circleci tests glob versions/**/options | circleci tests split)
       - run:
           name: test images
-          command: ./build test $(circleci tests glob versions/**/options | circleci tests split)
+          command: |
+            echo $(circleci tests glob versions/**/options)
+            ./build test $(circleci tests glob versions/**/options | circleci tests split)
       - run:
           name: push images
           command: |
